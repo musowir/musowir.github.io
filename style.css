@@ -159,6 +159,7 @@ a.socialIcon:hover,
   } */
 
 body{
+  font-size: medium;
   background-size: contain;
   background-size: cover;
   background-color: #f6f6f6;
@@ -278,51 +279,3 @@ body{
   color: rgb(44, 43, 43);
 }
 
-/* prof style
-
-.prof-cont .container .card {
-  width: max-content;
-  padding: 20px 15px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-  transition: 0.3s ease-in-out
-}
-
-.prof-cont .container .card .imgContainer {
-  position: relative;
-  top: -5px;
-  left: 5px;
-  z-index: 1;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2)
-}
-
-.prof-cont .container .card .imgContainer img {
-  max-width: 100%;
-  border-radius: 4px
-}
-
-.prof-cont .container .card .content {
-  position: relative;
-  margin-top: -200px;
-  padding: 10px 15px;
-  text-align: center;
-  color: #111;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.3s ease-in-out
-}
-
-.prof-cont .container .card:hover .content {
-  visibility: visible;
-  opacity: 1;
-  margin-top: -20px;
-  transition-delay: 0.3s
-}
-
-@media (max-width: 330px) {
-  .prof-cont .container .card .imgContainer {
-      left: -2px
-  }
-}
-
- */
