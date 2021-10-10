@@ -162,8 +162,8 @@ body{
   font-size: medium;
   background-size: contain;
   background-size: cover;
-  background-color: #f6f6f6;
-  background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  /* background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%); */
 }
 
 .banner{
@@ -180,6 +180,7 @@ body{
     
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background: #fff;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     transition: all 0.5s ease;
     cursor: pointer;
     user-select: none;
@@ -206,6 +207,9 @@ body{
     position: absolute;
     z-index: -1;
     background: #4c4c4d;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+    background-blend-mode: multiply,multiply;
     animation: popBackground 0.3s ease-in
 }
 
@@ -274,6 +278,7 @@ body{
   border-radius: 15px;
   margin: auto;
   width: max-content;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 .prof:hover{
   color: rgb(44, 43, 43);
