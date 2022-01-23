@@ -285,7 +285,7 @@ body{
   width: fit-content;
   position: absolute;
   top: 50%;
-  margin-left: 5vw;
+  margin-left: 2vw;
   
 }
 /* .cover{
@@ -310,4 +310,12 @@ body{
 
 .card{
   margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+
+ .hide-on {
+    display: none !important;
+ }
+
 }
