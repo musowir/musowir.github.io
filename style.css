@@ -282,21 +282,19 @@ body{
 }
 
 .quote-div{
-  width: fit-content;
-  position: absolute;
-  top: 50%;
-  margin-left: 2vw;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
   
 }
-/* .cover{
-  height: fit-content;
-} */
 .quote{
   font-style: italic;
+  font-size: large;
 }
 .blockquote-footer{
+  display: none;
   font-size: medium;
-  text-align: right;
 }
 
 .side-img{
