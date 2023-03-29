@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Django Developer and Data Scientist Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Abdu Musowir U</title>
     <style>
       /* Add some styling to the page */
       body {
@@ -37,6 +39,7 @@
         max-width: 1000px;
         margin: auto;
         padding: 20px;
+        color: #fffefe;
       }
       section {
         height: 100vh;
@@ -46,22 +49,89 @@
         background-size: cover;
       }
       .parallax1 {
-        background-image: url('web/pxl\ \(1\).png');
+        background-image: url('web/1.png');
       }
       
       .parallax2 {
-        background-image: url('web/pxl\ \(2\).png');
+        background-image: url('web/2.png');
       }
-      .text {
-        /* background-color: rgba(0,0,0,0.5); */
+      #about{
+        background-image: url('web/3.png');
+      }
+      #projects{
+        background-image: url('web/4.png');
+      }
+      #contact{
+        background-image: url('web/5.png');
+      }
+      /* .text {
+          color: #fff;
+          padding-left: 10%;
+          position: relative;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          width: 50%;
+          box-sizing: border-box;
+          text-align: left;
+
+        } */
+        .text {
         color: #fff;
         padding: 20px;
-        position: relative;
-        top: 65%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 50%;
+        box-sizing: border-box;
         text-align: center;
       }
+
+      @media (max-width: 480px) {
+        .text {
+          position: relative;
+          top: 70%;
+          left: auto;
+          width: 100%;
+          text-align: justify;
+        }
+        .text-contact {
+          color: #fff;
+          position: relative;
+          top: 55%;
+          left: auto;
+          width: 100%;
+          text-align: center;
+          padding: 20px;
+          box-sizing: border-box;
+        }
+      }
+
+      @media (min-width: 481px) {
+        .text {
+          position: relative;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          width: 50%;
+          box-sizing: border-box;
+          text-align: left;
+        }
+        .text-contact {
+          position: relative;
+          color: #fff;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          width: 50%;
+          box-sizing: border-box;
+          text-align: center;
+          padding: 20px;
+          box-sizing: border-box;
+        }
+      }
+
       .hover-effect {
         position: relative;
         display: inline-block;
@@ -98,17 +168,31 @@
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
       }
+      input[type="submit"]  {
+        background-color: #4CAF50; /* Set background color */
+        border: none; /* Remove border */
+        color: white; /* Set text color */
+        padding: 12px 24px; /* Set padding */
+        text-align: center; /* Center text */
+        text-decoration: none; /* Remove text underline */
+        display: inline-block; /* Make the button inline */
+        font-size: 16px; /* Set font size */
+        margin: 10px 0; /* Set margin */
+        cursor: pointer; /* Set cursor to pointer */
+      }
+
+      input[type="submit"]:hover {
+        background-color: #3e8e41; /* Change background color on hover */
+      }
+
     </style>
   </head>
   <body>
-    <header>
-      <h1>Django Developer and Data Scientist Portfolio</h1>
-    </header>
-    <nav>
+    <!-- <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
-    </nav>
+    </nav> -->
     <section class="parallax1">
       <div class="text">
         <h2>Django Development</h2>
@@ -121,12 +205,15 @@
           <p>I am also a skilled data scientist with experience in machine learning, data analysis, and visualization. I have worked with various programming languages such as Python, R, and SQL, and I am familiar with popular data science libraries like NumPy, Pandas, Matplotlib, and Scikit-learn.</p>
         </div>
       </section>
-      <section id="about" class="container">
+      <section id="about">
+        <div class="text">
         <h2>About Me</h2>
         <p>Hi, I am a passionate Django developer and data scientist with several years of experience in building web applications and solving complex data problems. I have a strong foundation in computer science, mathematics, and statistics, which allows me to approach problems with a logical and analytical mindset.</p>
         <p>When I am not coding, I enjoy hiking, playing guitar, and reading books on philosophy and psychology.</p>
+      </div>
       </section>
-      <section id="projects" class="container">
+      <section id="projects">
+        <div class="text">
         <h2>Projects</h2>
         <div class="hover-effect">
           <img src="project1.jpg" alt="Project 1">
@@ -146,18 +233,18 @@
             <div class="text">Project 3</div>
           </div>
         </div>
+        </div>
       </section>
-      <section id="contact" class="container">
+      <section id="contact">
+        <div class="text-contact">
         <h2>Contact Me</h2>
         <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
+          <input type="text" id="name" name="name" required placeholder="Name" size="31"><br><br>
+          <input type="email" id="email" name="email" required placeholder="Email" size="31"><br><br>
+          <textarea id="message" name="message" required placeholder="Message" cols="32"></textarea><br>
           <input type="submit" value="Send">
         </form>
+        </div>
       </section>
     </body>
   </html>
